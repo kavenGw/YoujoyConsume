@@ -43,7 +43,7 @@ public class MyThread extends Thread {
             //连接服务器 并设置连接超时为20秒
             socket = new Socket();
             //输入服务器ip
-            socket.connect(new InetSocketAddress("XXXXX", 0), 20000);
+            socket.connect(new InetSocketAddress(MyData.ip, MyData.port), 20000);
             Log.d(TAG,"startSocket");
 //            Log.d(TAG, String.format("%lu",System.currentTimeMillis()));
 //
