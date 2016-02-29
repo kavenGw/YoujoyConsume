@@ -94,7 +94,7 @@ public class MyThread extends Thread {
                         Value[] values= value.getKeyValueArray();
                         System.out.println("数量" + values.length);
                         int aliveNum = values[1].asIntegerValue().intValue();
-                        int diffsNum = values[5].asIntegerValue().intValue();
+                        int diffsNum = values[3].asIntegerValue().intValue();
                         System.out.print("finishRead" + aliveNum + " " + diffsNum);
 
                         Message message = new Message();
